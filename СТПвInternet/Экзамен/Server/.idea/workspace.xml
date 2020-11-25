@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="053cee8e-6640-4691-b3f9-b46029f782ab" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectId" id="1dS0NCeKUsQqIyqRCfYcf4huHbo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562042907586" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lab9" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunManager" selected="Application.Client2">
+    <configuration name="Client1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Client1" />
+      <module name="Server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Client2" />
+      <module name="Server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Client3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Client3" />
+      <module name="Server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Server" />
+      <module name="Server" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Client2" />
+        <item itemvalue="Application.Client1" />
+        <item itemvalue="Application.Server" />
+        <item itemvalue="Application.Client3" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="053cee8e-6640-4691-b3f9-b46029f782ab" name="Default Changelist" comment="" />
+      <created>1561930263140</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1561930263140</updated>
+      <workItem from="1561930273348" duration="1049000" />
+      <workItem from="1562042736184" duration="250000" />
+      <workItem from="1592403146242" duration="855000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="592" y="188" key="FileChooserDialogImpl" timestamp="1592403196780">
+      <screen x="87" y="0" width="1449" height="864" />
+    </state>
+    <state x="592" y="188" key="FileChooserDialogImpl/87.0.1449.864@87.0.1449.864" timestamp="1592403196780" />
+    <state width="1406" height="223" key="GridCell.Tab.0.bottom" timestamp="1592412353339">
+      <screen x="87" y="0" width="1449" height="864" />
+    </state>
+    <state width="1406" height="223" key="GridCell.Tab.0.bottom/87.0.1449.864@87.0.1449.864" timestamp="1592412353339" />
+    <state width="1406" height="223" key="GridCell.Tab.0.center" timestamp="1592412353339">
+      <screen x="87" y="0" width="1449" height="864" />
+    </state>
+    <state width="1406" height="223" key="GridCell.Tab.0.center/87.0.1449.864@87.0.1449.864" timestamp="1592412353339" />
+    <state width="1406" height="223" key="GridCell.Tab.0.left" timestamp="1592412353339">
+      <screen x="87" y="0" width="1449" height="864" />
+    </state>
+    <state width="1406" height="223" key="GridCell.Tab.0.left/87.0.1449.864@87.0.1449.864" timestamp="1592412353339" />
+    <state width="1406" height="223" key="GridCell.Tab.0.right" timestamp="1592412353339">
+      <screen x="87" y="0" width="1449" height="864" />
+    </state>
+    <state width="1406" height="223" key="GridCell.Tab.0.right/87.0.1449.864@87.0.1449.864" timestamp="1592412353339" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>11</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

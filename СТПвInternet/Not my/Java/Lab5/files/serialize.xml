@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="11.0.2" class="java.beans.XMLDecoder">
+ <object class="by.belstu.it.Chayeuski.Student.Student">
+  <void property="course">
+   <int>2</int>
+  </void>
+  <void property="name">
+   <string>Yura</string>
+  </void>
+  <void property="numOfZach">
+   <int>70077007</int>
+  </void>
+  <void property="surname">
+   <string>Karlenok</string>
+  </void>
+ </object>
+</java>

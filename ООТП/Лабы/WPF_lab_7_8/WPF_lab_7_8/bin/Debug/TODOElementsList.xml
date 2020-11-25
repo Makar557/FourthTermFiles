@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<ArrayOfTODOEl xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TODOEl>
+    <Index>0</Index>
+    <ShortName>Задание 111</ShortName>
+    <Discription>что-то</Discription>
+    <Category>Учёба</Category>
+    <Date>2020-05-06T00:00:00</Date>
+    <DateToString>06.05.2020</DateToString>
+    <Priority>Высокий</Priority>
+    <Periodicity>Раз в неделю</Periodicity>
+    <Complited>true</Complited>
+  </TODOEl>
+  <TODOEl>
+    <Index>1</Index>
+    <ShortName>Задание 2</ShortName>
+    <Discription>что-то другое</Discription>
+    <Category>Другое</Category>
+    <Date>2020-05-06T00:00:00</Date>
+    <DateToString>06.05.2020</DateToString>
+    <Priority>Низкий</Priority>
+    <Periodicity>Каждый день</Periodicity>
+    <Complited>true</Complited>
+  </TODOEl>
+  <TODOEl>
+    <Index>2</Index>
+    <ShortName>Задание 3</ShortName>
+    <Discription>что-то</Discription>
+    <Category>Работа</Category>
+    <Date>2020-05-06T00:00:00</Date>
+    <DateToString>06.05.2020</DateToString>
+    <Priority>Низкий</Priority>
+    <Periodicity>Раз в год</Periodicity>
+    <Complited>false</Complited>
+  </TODOEl>
+  <TODOEl>
+    <Index>3</Index>
+    <ShortName>Задание 4</ShortName>
+    <Discription>что-то</Discription>
+    <Category>Учёба</Category>
+    <Date>2020-05-06T00:00:00</Date>
+    <DateToString>06.05.2020</DateToString>
+    <Priority>Высокий</Priority>
+    <Periodicity>Раз в неделю</Periodicity>
+    <Complited>false</Complited>
+  </TODOEl>
+  <TODOEl>
+    <Index>4</Index>
+    <ShortName>Задание 5</ShortName>
+    <Discription>что-то</Discription>
+    <Category>Учёба</Category>
+    <Date>2020-05-06T00:00:00</Date>
+    <DateToString>06.05.2020</DateToString>
+    <Priority>Высокий</Priority>
+    <Periodicity>Раз в неделю</Periodicity>
+    <Complited>false</Complited>
+  </TODOEl>
+  <TODOEl>
+    <Index>5</Index>
+    <ShortName>Задание 6</ShortName>
+    <Discription>что-то</Discription>
+    <Category>Учёба</Category>
+    <Date>2020-05-06T00:00:00</Date>
+    <DateToString>06.05.2020</DateToString>
+    <Priority>Высокий</Priority>
+    <Periodicity>Раз в неделю</Periodicity>
+    <Complited>false</Complited>
+  </TODOEl>
+</ArrayOfTODOEl>

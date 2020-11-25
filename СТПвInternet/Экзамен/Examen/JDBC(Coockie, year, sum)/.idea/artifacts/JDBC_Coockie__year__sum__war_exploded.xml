@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="JDBC(Coockie, year, sum):war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/JDBC_Coockie__year__sum__war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="JDBC(Coockie, year, sum)/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="JDBC(Coockie, year, sum)" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,4 @@
+﻿  LibSurface.cpp
+d:\cgg\cgg 6\cgg 6\libsurface.cpp(159): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+d:\cgg\cgg 6\cgg 6\libsurface.cpp(160): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  CGG 6.vcxproj -> D:\CGG\CGG 6\x64\Debug\CGG 6.exe

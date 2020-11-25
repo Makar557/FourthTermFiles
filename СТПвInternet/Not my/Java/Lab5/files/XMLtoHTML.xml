@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<STUDENTS>
+    <STUDENT>
+        <NAME>Yura</NAME>
+        <SURNAME>Karlenok</SURNAME>
+        <COURSE> 2 </COURSE>
+        <NUMOFZACH>70077007</NUMOFZACH>
+    </STUDENT>
+
+    <STUDENT>
+        <NAME>Liza</NAME>
+        <SURNAME>Borodina</SURNAME>
+        <COURSE> 2 </COURSE>
+        <NUMOFZACH>60066006</NUMOFZACH>
+    </STUDENT>
+
+    <STUDENT>
+        <NAME>Ilya</NAME>
+        <SURNAME>Sikorsky</SURNAME>
+        <COURSE> 2 </COURSE>
+        <NUMOFZACH>50055005</NUMOFZACH>
+    </STUDENT>
+</STUDENTS>

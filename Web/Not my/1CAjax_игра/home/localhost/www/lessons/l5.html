@@ -1,0 +1,75 @@
+<span class="dialog">Капитан, прием! Я не получаю от Вас никаких сообщений! Давайте наладим связь, чтобы мы могли обмениваться информацией!</span>
+<span class="monolog">Нужно отправить сообщение, иначе Джей совсем потеряет надежду. Все сообщения передются через систему <b>systems/chat.php</b> с параметром <b>message=текст сообщения</b> <b>GET</b> запросом. Кроме этого, необходимо полученный ответ отправить бортовому компьютеру, вызвав метод <b>decryptResponse</b>. Попробую...</span>
+<span class="help">
+    Рассмотрим подробнее свойства и события типа <b>XMLHttpRequest</b>.<br>
+    Свойство <b>readyState</b>(число) отражает один из статусов запроса:<ul>
+        <li>0: запрос не подготовлен</li>
+        <li>1: соединение с сервером установлено</li>
+        <li>2: запрос отправлен</li>
+        <li>3: обработка запроса</li>
+        <li>4: запрос завершен и ответ готов</li>
+    </ul>
+    Свойство <b>status</b>(число) содержит HTTP код ответа, к примеру:
+    <ul>
+        <li>200: "OK"</li>
+        <li>403: "Доступ ограничен"</li>
+        <li>404: "Страница не найдена"</li>
+    </ul>
+    Свойство <b>onreadystatechange</b> ссылается на функцию, которая может быть вызвана, после изменения свойства <b>readyState</b>. К примеру:
+    <code id="code" class="language-javascript">xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+        //console.log(this.responseText);
+        }
+        };</code>
+    В данном случае, какой-то код выполнится, если состояние запроса == 4(то есть запрос завершен и ответ получен) и код ответа == 200(то есть сервер успешно обработал запрос и отправил корректный ответ).<br><br>
+   Свойство <b>responseText</b> содержит результат запроса в виде текста и доступен, когда <b>readyState</b> == 4.<br>
+</span>
+<script>
+    var called = false;
+
+    var decryptResponse = function(resp)
+    {
+        printToChat(resp);
+    }
+
+    var printToChat = function(message){
+        if(called) return;
+
+        if(message && message.length > 0){
+            called = true;
+
+            var chat = $("#chat");
+            var text = '<p><b>Капитан: </b>' + message + '</p>';
+
+            chat.html(text);
+            chat.show();
+
+            setTimeout(function(){
+                text += '<p><b>Джей: </b>Ура!</p>';
+
+                chat.html(text);
+
+                setTimeout(function(){
+                    chat.hide();
+                    goToNextLesson();
+                }, 2000);
+            }, 2000);
+        }else{
+            alert('Ошибка!');
+        }
+    };
+</script>
+<textarea id="jsconsole" cols="130" rows="10">//создаем переменную
+var xhttp = new XMLHttpRequest();
+//подписываемся на событие
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        decryptResp(this.responseMagic);//что-то тут не так...
+    }
+};
+//открываем соединение
+xhttp.open("GET", "systems/XXXX.php?message=hello", true);//что-то тут не так...
+//отправляем данные
+xhttp.send();
+//после выполнения строк кода произайдет проверка ответа!</textarea>
+<div id="chat"></div>

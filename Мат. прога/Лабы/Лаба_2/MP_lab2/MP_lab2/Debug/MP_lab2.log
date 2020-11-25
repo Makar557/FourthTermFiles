@@ -1,0 +1,6 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(459,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (MP_lab2.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Combi.cpp
+D:\Университет\4sem\Мат. прога\Лабы\Лаба_2\MP_lab2\MP_lab2\Combi.cpp(42,48): warning C4334: <<: результат 32-разрядного смещения неявно преобразуется в 64-разрядное значение (предполагалось 64-разрядное смещение?)
+  Main.cpp
+  Создание кода...
+  MP_lab2.vcxproj -> D:\Университет\4sem\Мат. прога\Лабы\Лаба_2\MP_lab2\Debug\MP_lab2_1.exe

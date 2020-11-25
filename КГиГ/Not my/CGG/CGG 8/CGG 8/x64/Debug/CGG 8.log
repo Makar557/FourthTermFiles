@@ -1,0 +1,12 @@
+﻿  ChildView.cpp
+d:\cgg\cgg 8\cgg 8\childview.h(32): warning C4244: =: преобразование "float" в "LONG", возможна потеря данных
+d:\cgg\cgg 8\cgg 8\childview.h(33): warning C4244: =: преобразование "float" в "LONG", возможна потеря данных
+d:\cgg\cgg 8\cgg 8\childview.h(80): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+d:\cgg\cgg 8\cgg 8\childview.h(81): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+d:\cgg\cgg 8\cgg 8\childview.h(82): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+d:\cgg\cgg 8\cgg 8\childview.cpp(164): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+d:\cgg\cgg 8\cgg 8\childview.cpp(165): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+d:\cgg\cgg 8\cgg 8\childview.cpp(166): warning C4244: =: преобразование "double" в "float", возможна потеря данных
+d:\cgg\cgg 8\cgg 8\childview.cpp(185): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+d:\cgg\cgg 8\cgg 8\childview.cpp(189): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+  CGG 8.vcxproj -> D:\CGG\CGG 8\x64\Debug\CGG 8.exe

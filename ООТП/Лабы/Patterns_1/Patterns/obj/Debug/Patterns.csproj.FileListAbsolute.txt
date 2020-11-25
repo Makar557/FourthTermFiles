@@ -1,0 +1,12 @@
+D:\Университет\4sem\ООТП\Лабы\Patterns\Patterns\bin\Debug\Patterns.exe.config
+D:\Университет\4sem\ООТП\Лабы\Patterns\Patterns\bin\Debug\Patterns.exe
+D:\Университет\4sem\ООТП\Лабы\Patterns\Patterns\bin\Debug\Patterns.pdb
+D:\Университет\4sem\ООТП\Лабы\Patterns\Patterns\obj\Debug\Patterns.csprojAssemblyReference.cache
+D:\Университет\4sem\ООТП\Лабы\Patterns\Patterns\obj\Debug\Patterns.exe
+D:\Университет\4sem\ООТП\Лабы\Patterns\Patterns\obj\Debug\Patterns.pdb
+D:\Университет\4sem\ООТП\Лабы\Patterns_1\Patterns\bin\Debug\Patterns.exe.config
+D:\Университет\4sem\ООТП\Лабы\Patterns_1\Patterns\bin\Debug\Patterns.exe
+D:\Университет\4sem\ООТП\Лабы\Patterns_1\Patterns\bin\Debug\Patterns.pdb
+D:\Университет\4sem\ООТП\Лабы\Patterns_1\Patterns\obj\Debug\Patterns.csprojAssemblyReference.cache
+D:\Университет\4sem\ООТП\Лабы\Patterns_1\Patterns\obj\Debug\Patterns.exe
+D:\Университет\4sem\ООТП\Лабы\Patterns_1\Patterns\obj\Debug\Patterns.pdb

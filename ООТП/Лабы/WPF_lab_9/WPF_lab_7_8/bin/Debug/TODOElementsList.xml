@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<ArrayOfTODOEl xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TODOEl>
+    <Index>0</Index>
+    <ShortName>t1</ShortName>
+    <Discription>thrth</Discription>
+    <Category>Учёба</Category>
+    <Date>2020-05-28T00:00:00</Date>
+    <DateToString>28.05.2020</DateToString>
+    <Priority>Низкий</Priority>
+    <Periodicity>Каждый день</Periodicity>
+    <Complited>false</Complited>
+  </TODOEl>
+  <TODOEl>
+    <Index>1</Index>
+    <ShortName>t2</ShortName>
+    <Discription>gtrwh</Discription>
+    <Category>Работа</Category>
+    <Date>2020-05-28T00:00:00</Date>
+    <DateToString>28.05.2020</DateToString>
+    <Priority>Низкий</Priority>
+    <Periodicity>Раз в неделю</Periodicity>
+    <Complited>false</Complited>
+  </TODOEl>
+  <TODOEl>
+    <Index>2</Index>
+    <ShortName>t3</ShortName>
+    <Discription>trthtr</Discription>
+    <Category>Работа</Category>
+    <Date>2020-05-28T00:00:00</Date>
+    <DateToString>28.05.2020</DateToString>
+    <Priority>Средний</Priority>
+    <Periodicity>Каждый день</Periodicity>
+    <Complited>false</Complited>
+  </TODOEl>
+  <TODOEl>
+    <Index>3</Index>
+    <ShortName>t4</ShortName>
+    <Discription>grwqg</Discription>
+    <Category>Учёба</Category>
+    <Date>2020-05-28T00:00:00</Date>
+    <DateToString>28.05.2020</DateToString>
+    <Priority>Средний</Priority>
+    <Periodicity>Один раз</Periodicity>
+    <Complited>false</Complited>
+  </TODOEl>
+  <TODOEl>
+    <Index>4</Index>
+    <ShortName>gg</ShortName>
+    <Discription>gg</Discription>
+    <Category>Работа</Category>
+    <Date>2020-05-28T00:00:00</Date>
+    <DateToString>28.05.2020</DateToString>
+    <Priority>Средний</Priority>
+    <Periodicity>Один раз</Periodicity>
+    <Complited>false</Complited>
+  </TODOEl>
+  <TODOEl>
+    <Index>5</Index>
+    <ShortName>gg1</ShortName>
+    <Discription>gg</Discription>
+    <Category>Дома</Category>
+    <Date>2020-05-28T00:00:00</Date>
+    <DateToString>28.05.2020</DateToString>
+    <Priority>Низкий</Priority>
+    <Periodicity>Каждый день</Periodicity>
+    <Complited>false</Complited>
+  </TODOEl>
+  <TODOEl>
+    <Index>6</Index>
+    <ShortName>gg2</ShortName>
+    <Discription>yt2y</Discription>
+    <Category>Другое</Category>
+    <Date>2020-05-28T00:00:00</Date>
+    <DateToString>28.05.2020</DateToString>
+    <Priority>Низкий</Priority>
+    <Periodicity>Раз в месяц</Periodicity>
+    <Complited>false</Complited>
+  </TODOEl>
+  <TODOEl>
+    <Index>7</Index>
+    <ShortName>htrt</ShortName>
+    <Discription>htht</Discription>
+    <Category>Другое</Category>
+    <Date>2020-05-28T00:00:00</Date>
+    <DateToString>28.05.2020</DateToString>
+    <Priority>Низкий</Priority>
+    <Periodicity>Каждый день</Periodicity>
+    <Complited>false</Complited>
+  </TODOEl>
+  <TODOEl>
+    <Index>8</Index>
+    <ShortName>111111111</ShortName>
+    <Discription>fefgerg</Discription>
+    <Category>Учёба</Category>
+    <Date>2020-05-28T00:00:00</Date>
+    <DateToString>28.05.2020</DateToString>
+    <Priority>Средний</Priority>
+    <Periodicity>Каждый день</Periodicity>
+    <Complited>false</Complited>
+  </TODOEl>
+</ArrayOfTODOEl>

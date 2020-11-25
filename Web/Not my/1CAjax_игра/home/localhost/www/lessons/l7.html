@@ -1,0 +1,31 @@
+<span class="dialog">Вы справились, Капитан! Я не терял времени и успел разобраться, что не так с двигателем. Каким-то образом программа, отвечающая за управление двигателемь, перестала корректно работать. Кажется, это вирус! Нужно срочно восстановить ее! Поэтому нужно перезапустить двигатель, чтобы программа вернулась к состоянию заводской сборки.<br>Сперва нужно отправить GET запрос системе <b>systems/engine.php</b> и получить ключ доступа,указав в параметре <b>method=getkey</b>. Ответом будет строка, в которой находится либо ключ, либо значение "error", если что-то не так.<br>Следующий POST запрос должен содержать поле <b>method=restart</b> и <b>key=КЛЮЧ</b>, где значение КЛЮЧ равно ключу, полученному из предыдущего этапа. Все запросы должны быть выполнены синхронно и последовательно.</span>
+<span class="monolog">Хм. Но ведь чтобы передать параметры в запросе с типом POST нужно использовать ...</span>
+<span class="help">Отредактируйте программу в соответствии с условием.
+</span>
+<script>
+
+</script>
+<textarea id="jsconsole" cols="130" rows="10">//создаем переменную
+var xhttp = new XMLHttpRequest();
+
+xhttp.open("GET", "systems/engine.php?method=xxx", false);//получаем ключ...
+xhttp.send();
+
+var key = xhttp.responseText;
+
+if(xhttp.status == 200 && xhttp.readyState == 4 && key != "error"){
+    xhttp.open("POST", "systems/engine.php", false);
+    //устанавливаем заголовок
+    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    //отправляем запрос
+    xhttp.send("abc");//тут необходимо составить запрос, используя при этом переменную 'key'
+}</textarea>
+<script id="afterBuiltInCode">
+    if(xhttp.responseText == "engine_restarted"){
+        alert('Двигатель перезапущен! Все системы в норме!');
+        goToNextLesson();
+    }else{
+        alert('Что-то пошло не так!');
+    }
+</script>
+<div id="chat"></div>

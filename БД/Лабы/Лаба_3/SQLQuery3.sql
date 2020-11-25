@@ -1,0 +1,40 @@
+USE Kubik_DB3;
+DROP TABLE STUDENTS;
+CREATE TABLE STUDENTS(Номер_зачётки INT PRIMARY KEY IDENTITY(1, 1),
+						Фамилия nvarchar(30) NOT NULL,
+						Номер_группы INT DEFAULT '5' CHECK(Номер_группы > 0 AND Номер_группы < 11),
+						MARK1 INT NOT NULL CHECK(MARK1>3 and MARK1<11),
+						MARK2 INT NOT NULL CHECK(MARK2>3 and MARK2<11),
+						BIRTHDAY DATE,
+						ENTERINGDATE DATE);
+
+ALTER TABLE STUDENTS ADD Дата_поступления DATE;
+ALTER TABLE STUDENTS ADD Пол nchar(1) default 'ж' check (Пол in ('м', 'ж')); 
+ALTER TABLE STUDENTS DROP Column Дата_поступления;
+
+INSERT INTO STUDENTS (Фамилия, Номер_группы, MARK1, MARK2, BIRTHDAY)
+	VALUES ('B', 6, 7, 9, '2001-6-7'), 
+	('C', 4, 5, 4, '1999-12-7'), 
+	('D', 1, 6, 6, '2000-9-25'), 
+	('E', 9, 9, 8, '1999-4-28'), 
+	('F', 10, 4, 10, '1999-6-6'),
+	('A1', 9, 4, 7, '2001-1-1');
+UPDATE STUDENTS SET ENTERINGDATE='2018-6-20';
+
+SELECT COUNT(*) FROM STUDENTS;
+SELECT DISTINCT TOP(10) * FROM STUDENTS WHERE Номер_группы > 3 AND Номер_группы < 7 ORDER BY Номер_группы DESC;
+
+UPDATE STUDENTS SET Номер_группы=5;
+SELECT * FROM STUDENTS;
+DELETE FROM STUDENTS WHERE Номер_зачётки=2 OR Номер_зачётки=5;
+
+SELECT DISTINCT TOP(10) * FROM STUDENTS WHERE Номер_группы BETWEEN 4 AND 6;
+
+SELECT * FROM STUDENTS WHERE Фамилия LIKE 'A%';
+
+SELECT * FROM STUDENTS WHERE Номер_группы IN (9,10);
+
+ALTER TABLE STUDENTS ADD Средняя_за_экзамены AS (MARK1+MARK2)/2;
+
+SELECT Фамилия, MARK1, MARK2, Средняя_за_экзамены FROM STUDENTS;
+SELECT Фамилия, BIRTHDAY FROM STUDENTS WHERE DATEDIFF(YEAR, BIRTHDAY, ENTERINGDATE)>=18;

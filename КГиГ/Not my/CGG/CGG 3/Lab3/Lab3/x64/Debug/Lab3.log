@@ -1,0 +1,14 @@
+﻿  CMainWin.cpp
+D:\Университет\4sem\КГиГ\Not my\CGG\CGG 3\Lab3\Lab3\CMainWin.cpp(33,34): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+D:\Университет\4sem\КГиГ\Not my\CGG\CGG 3\Lab3\Lab3\CMainWin.cpp(33,25): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+D:\Университет\4sem\КГиГ\Not my\CGG\CGG 3\Lab3\Lab3\CMainWin.cpp(104,42): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+D:\Университет\4sem\КГиГ\Not my\CGG\CGG 3\Lab3\Lab3\CMainWin.cpp(115,42): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+D:\Университет\4sem\КГиГ\Not my\CGG\CGG 3\Lab3\Lab3\CMainWin.cpp(138,12): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+D:\Университет\4sem\КГиГ\Not my\CGG\CGG 3\Lab3\Lab3\CMainWin.cpp(166,12): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+D:\Университет\4sem\КГиГ\Not my\CGG\CGG 3\Lab3\Lab3\CMainWin.cpp(186,12): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+D:\Университет\4sem\КГиГ\Not my\CGG\CGG 3\Lab3\Lab3\CMainWin.cpp(214,12): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+D:\Университет\4sem\КГиГ\Not my\CGG\CGG 3\Lab3\Lab3\CMainWin.cpp(234,13): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+D:\Университет\4sem\КГиГ\Not my\CGG\CGG 3\Lab3\Lab3\CMainWin.cpp(251,13): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+D:\Университет\4sem\КГиГ\Not my\CGG\CGG 3\Lab3\Lab3\CMainWin.cpp(268,13): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+D:\Университет\4sem\КГиГ\Not my\CGG\CGG 3\Lab3\Lab3\CMainWin.cpp(285,13): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  Lab3.vcxproj -> D:\Университет\4sem\КГиГ\Not my\CGG\CGG 3\Lab3\x64\Debug\Lab3.exe

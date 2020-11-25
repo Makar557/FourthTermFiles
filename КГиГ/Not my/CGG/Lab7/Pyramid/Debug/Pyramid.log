@@ -1,0 +1,5 @@
+﻿cl : командная строка warning D9035: использование параметра "Gm" нежелательно, он будет удален в следующих выпусках
+  LibPyramid.cpp
+  ChildView.cpp
+  Создание кода...
+  Pyramid.vcxproj -> D:\CGG\Lab7\Debug\Pyramid.exe

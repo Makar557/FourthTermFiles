@@ -1,0 +1,276 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_lab_7_8"
+        xmlns:ViewModels="clr-namespace:WPF_lab_7_8.ViewModels" x:Class="WPF_lab_7_8.MainWindow"
+        mc:Ignorable="d"
+        Title="{DynamicResource d_Title}" Height="700" Width="1000" MinHeight="455" MinWidth="800" 
+    Icon="/Resources/1.png" Cursor="/Resources/Arrow.cur">
+    <Window.DataContext>
+        <ViewModels:MainViewModel/>
+    </Window.DataContext>
+    <Window.Resources>
+        <ResourceDictionary Source="/Dictionaries/Dictionary_Styles.xaml"/>
+    </Window.Resources>
+    <Grid Style="{DynamicResource ResourceKey=Background}">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Панель меню -->
+        <StackPanel Grid.Row="0" Grid.Column="0"  Orientation="Vertical">
+            <Button Height="100" Command="{Binding AddTaskWindow}" Style="{DynamicResource ResourceKey=Background1}">
+                <Image Source="/Resources/plus.png" Width="80" />
+            </Button>
+            <Button Style="{StaticResource ResourceKey=ToolMenu}" Command="{Binding ChangeTaskWindow}">
+                <Image Source="/Resources/Edit.png" Width="80" />
+            </Button>
+            <Button Style="{StaticResource ResourceKey=ToolMenu}" Command="{Binding FilterTaskWidth}">
+                <Image Source="/Resources/filter.png" Width="80" />
+            </Button>
+            <Button Style="{StaticResource ResourceKey=ToolMenu}" Command="{Binding DeleteTask}">
+                <Image Source="/Resources/Delete.png" Width="80" />
+            </Button>
+
+            <Button Height="30" Width="90" Style="{StaticResource ResourceKey=ButtonStyle1}" >
+                <Button.Content>
+                    кнопка 1
+                </Button.Content>
+            </Button>
+            <Button Height="30" Width="90" Content="кнопка 2" Style="{StaticResource ResourceKey=ButtonStyle2}"/>
+            <Button Height="30" Width="90" Content="кнопка 3" Style="{StaticResource ResourceKey=ButtonStyle3}"/>
+            <Button Height="30" Width="90"  Style="{StaticResource ResourceKey=ButtonStyle4}">
+                <Button.Content>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="кнопка 4  " />
+                        <CheckBox x:Name="checkBox1" IsChecked="{Binding IsChekedButton4}"/>
+                    </StackPanel>
+                </Button.Content>
+            </Button>
+            <Button Height="30" Width="90" Content="undo" Margin="5,0"  Command="{Binding Undo}"/>
+            <Button Height="30" Width="90" Content="redo"  Margin="5,0"  Command="{Binding Redo}"/>
+
+
+
+        </StackPanel>
+
+        <Menu VerticalAlignment="Bottom" Grid.Row="0" Grid.ColumnSpan="2" Height="18">
+            <MenuItem Header="{DynamicResource d_Language}" Width="70">
+                <MenuItem Header="English" Command="{Binding Language_EN}" />
+                <MenuItem Header="Русский" Command="{Binding Language_RU}"/>
+            </MenuItem>
+            <MenuItem Header="{DynamicResource d_Theme}" Width="70">
+                <MenuItem Header="Pink" Command="{Binding Pink}" />
+                <MenuItem Header="LightBlue" Command="{Binding LightBlue}"/>
+            </MenuItem>
+        </Menu>
+
+
+
+
+        <DataGrid Grid.Column="1" 
+                  HorizontalAlignment="Center" VerticalAlignment="Top" 
+                  GridLinesVisibility="None"
+                  FontSize="16"
+                  FontFamily="Courier New"
+                  ScrollViewer.CanContentScroll="False"
+                  SelectionMode="Single"
+                  RowStyle="{StaticResource ResourceKey=TasksRow}" AutoGenerateColumns="False"
+                  ItemsSource="{Binding TODOElementsList}" SelectedItem="{Binding TemplEl}" 
+                  CellStyle="{StaticResource ResourceKey=SelectedTasksRow}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="{DynamicResource d_ShortName}" Binding="{Binding Path=ShortName}" IsReadOnly="True" />
+                <DataGridTextColumn Header="{DynamicResource d_Category}" Binding="{Binding Path=Category}" IsReadOnly="True" />
+                <DataGridTextColumn Header="{DynamicResource d_TimeBegine}" Binding="{Binding Path=DateToString}" IsReadOnly="True" />
+                <DataGridTextColumn Header="{DynamicResource d_Priority}" Binding="{Binding Path=Priority}" IsReadOnly="True" />
+                <DataGridTextColumn Header="{DynamicResource d_Periodicity }" Binding="{Binding Path=Periodicity}" IsReadOnly="True" />
+                <DataGridCheckBoxColumn Header="{DynamicResource d_Completed}" Binding="{Binding Path=Complited}"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Добавить -->
+
+        <StackPanel Visibility="Visible" Style="{DynamicResource ResourceKey=12}"
+            Orientation="Vertical" Grid.Column="1" 
+                    HorizontalAlignment="Left" VerticalAlignment="Top" 
+                    Height="Auto" Width="{Binding AddTaskWidth}" 
+                    Background="AliceBlue" >
+
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{DynamicResource d_ShortName}" Margin="10, 20, 0, 10"/>
+                <TextBox MaxLength="50" Width="100"  Margin="12, 20, 0, 10" Text="{Binding TemplElForADD.ShortName}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{DynamicResource d_Discription}" Margin="10, 10, 0, 10"/>
+                <TextBox Width="100"  Margin="10, 10, 0, 10" Height="70"
+                         MaxLength="250" TextWrapping="Wrap" Text="{Binding TemplElForADD.Discription}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{DynamicResource d_Category}" Margin="10, 10, 0, 10"/>
+                <ComboBox Margin="10, 10, 0, 10" Width="70" Text="{Binding TemplElForADD.Category}">
+                    <TextBlock Text="{DynamicResource d_Home}"/>
+                    <TextBlock Text="{DynamicResource d_Study}"/>
+                    <TextBlock Text="{DynamicResource d_Work}"/>
+                    <TextBlock Text="{DynamicResource d_Other}"/>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{DynamicResource d_Priority}" Margin="10, 10, 0, 10"/>
+                <ComboBox Margin="10, 10, 0, 10" Width="70" Text="{Binding TemplElForADD.Priority}">
+                    <TextBlock Text="{DynamicResource d_Low}"/>
+                    <TextBlock Text="{DynamicResource d_Medium}"/>
+                    <TextBlock Text="{DynamicResource d_High}"/>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical">
+                <DatePicker Width="150" SelectedDate="{Binding TemplElForADD.Date}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                <TextBlock Text="{DynamicResource d_Periodicity}" Margin="10, 10, 0, 10"/>
+                <ComboBox Margin="10, 0, 0, 10" Width="100" Text="{Binding TemplElForADD.Periodicity}">
+                    <TextBlock Text="{DynamicResource d_Once}"/>
+                    <TextBlock Text="{DynamicResource d_EveryDay}"/>
+                    <TextBlock Text="{DynamicResource d_EveryWeek}"/>
+                    <TextBlock Text="{DynamicResource d_EveryMonth}"/>
+                    <TextBlock Text="{DynamicResource d_EveryYear}"/>
+                </ComboBox>
+            </StackPanel>
+
+            <Button  Width="70" Height="30" Margin="0, 0, 0, 10" Content="{DynamicResource d_Add}" 
+                     Command="{Binding AddTask}">
+            </Button>
+        </StackPanel>
+
+        <!-- Изменить -->
+
+        <StackPanel Visibility="Visible" Style="{DynamicResource ResourceKey=Background}"
+            Margin="0, 100, 0, 0"
+            Orientation="Vertical" Grid.Column="1" 
+                    HorizontalAlignment="Left" VerticalAlignment="Top" 
+                    Height="Auto" Width="{Binding ChangeTaskWidth}"
+                    Background="Azure" >
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{DynamicResource d_ShortName}" Margin="10, 10, 0, 10"/>
+                <TextBox MaxLength="50" Width="100"  Margin="12, 10, 0, 10" Text="{Binding TemplElForEDIT.ShortName}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{DynamicResource d_Discription}" Margin="10, 10, 0, 10"/>
+                <TextBox Width="100"  Margin="10, 10, 0, 10" Height="70"
+                         MaxLength="250" TextWrapping="Wrap" Text="{Binding TemplElForEDIT.Discription}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{DynamicResource d_Category}" Margin="10, 10, 0, 10"/>
+                <ComboBox Margin="10, 10, 0, 10" Width="70" Text="{Binding TemplElForEDIT.Category}">
+                    <TextBlock Text="{DynamicResource d_Home}"/>
+                    <TextBlock Text="{DynamicResource d_Study}"/>
+                    <TextBlock Text="{DynamicResource d_Work}"/>
+                    <TextBlock Text="{DynamicResource d_Other}"/>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{DynamicResource d_Priority}" Margin="10, 10, 0, 10"/>
+                <ComboBox Margin="10, 10, 0, 10" Width="70" Text="{Binding TemplElForEDIT.Priority}">
+                    <TextBlock Text="{DynamicResource d_Low}"/>
+                    <TextBlock Text="{DynamicResource d_Medium}"/>
+                    <TextBlock Text="{DynamicResource d_High}"/>
+                </ComboBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical">
+                <DatePicker Width="150" SelectedDate="{Binding TemplElForEDIT.Date}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                <TextBlock Text="{DynamicResource d_Periodicity}" Margin="10, 10, 0, 10"/>
+                <ComboBox Margin="10, 0, 0, 10" Width="100" Text="{Binding TemplElForEDIT.Periodicity}">
+                    <TextBlock Text="{DynamicResource d_Once}"/>
+                    <TextBlock Text="{DynamicResource d_EveryDay}"/>
+                    <TextBlock Text="{DynamicResource d_EveryWeek}"/>
+                    <TextBlock Text="{DynamicResource d_EveryMonth}"/>
+                    <TextBlock Text="{DynamicResource d_EveryYear}"/>
+                </ComboBox>
+            </StackPanel>
+
+            <Button  Width="70" Height="20" Margin="0, 0, 0, 10" Content="{DynamicResource d_Edit}" 
+                     Command="{Binding ChangeTask}"/>
+
+        </StackPanel>
+
+        <!-- Фильтр -->
+
+        <StackPanel Visibility="Visible"
+            Margin="0, 200, 0, 0"
+            Orientation="Vertical" Grid.Column="1" 
+                    HorizontalAlignment="Left" VerticalAlignment="Top" 
+                    Height="Auto" Width="{Binding FilterWidth}"
+                    Background="Azure" >
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{DynamicResource d_ShortName}" Margin="10, 10, 0, 10"/>
+                <TextBox MaxLength="50" Width="100"  Margin="12, 10, 0, 10" Text="{Binding TemplElForFILTER.ShortName}"/>
+                <CheckBox Margin="10, 13, 10, 0" IsChecked="{Binding ShortNameCheck}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{DynamicResource d_Category}" Margin="10, 10, 0, 10"/>
+                <ComboBox Margin="10, 10, 0, 10" Width="70" Text="{Binding TemplElForFILTER.Category}">
+                    <TextBlock Text="{DynamicResource d_Home}"/>
+                    <TextBlock Text="{DynamicResource d_Study}"/>
+                    <TextBlock Text="{DynamicResource d_Work}"/>
+                    <TextBlock Text="{DynamicResource d_Other}"/>
+                </ComboBox>
+                <CheckBox Margin="10, 15, 0, 0" IsChecked="{Binding CategoryCheck}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{DynamicResource d_Priority}" Margin="10, 10, 0, 10"/>
+                <ComboBox Margin="10, 10, 0, 0" Width="70" Text="{Binding TemplElForFILTER.Priority}">
+                    <TextBlock Text="{DynamicResource d_Low}"/>
+                    <TextBlock Text="{DynamicResource d_Medium}"/>
+                    <TextBlock Text="{DynamicResource d_High}"/>
+                </ComboBox>
+                <CheckBox Margin="10, 15, 0, 0" IsChecked="{Binding PriorityCheck}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Margin="10, 10, 0, 0">
+                <DatePicker Width="150" SelectedDate="{Binding TemplElForFILTER.Date}"/>
+                <CheckBox Margin="10, 5, 0, 0" IsChecked="{Binding DateCheck}"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="{DynamicResource d_Periodicity}" Margin="10, 10, 0, 10"/>
+                <ComboBox Margin="10, 10, 0, 10" Width="100" Text="{Binding TemplElForFILTER.Periodicity}">
+                    <TextBlock Text="{DynamicResource d_Once}"/>
+                    <TextBlock Text="{DynamicResource d_EveryDay}"/>
+                    <TextBlock Text="{DynamicResource d_EveryWeek}"/>
+                    <TextBlock Text="{DynamicResource d_EveryMonth}"/>
+                    <TextBlock Text="{DynamicResource d_EveryYear}"/>
+                </ComboBox>
+                <CheckBox Margin="10, 15, 0, 0" IsChecked="{Binding PeriodicityCheck}"/>
+            </StackPanel>
+
+            <Button  Width="80" Height="20" Margin="0, 0, 0, 10" Content="{DynamicResource d_Filter}" 
+                     Command="{Binding FilterTask}" />
+
+        </StackPanel>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="235,430,0,0" TextWrapping="Wrap" Text="" x:Name="TB" VerticalAlignment="Top" Height="75" Width="340"/>
+
+    </Grid>
+</Window>

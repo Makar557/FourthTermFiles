@@ -1,0 +1,35 @@
+<span class="dialog">Капитан! Между нашими отсеками осталась запертая дверь. Чтобы ее открыть, необходимо отправить запрос в систему <b>systems/door.php</b> с параметрами <b>door=2</b>, <b>status=open</b>, <b>code=123</b>. Кроме этого, запрос нужно отправить, используя тип <b>POST</b>. Если передать параметры в составе url, то они не будут использоваться! Ах да! Запрос нужно выполнить синхронно, иначе борт-компьюетр обработает пустой результат! Удачи!</span>
+<span class="monolog">Хм. Но ведь чтобы передать параметры в запросе с типом POST нужно использовать ...</span>
+<span class="help">Обычно, запросы с типом GET используются для получения данных, а тип POST - для изменения или передачи данных. По сравнению с GET, POST-запрос может иметь неограниченный размер содержимого(размер данных), в то время как длина URL ограничена как для GET, так и для POST запросов.<br>
+   Для отправки данных в запросе с типом POST необходимо следующее:
+    <ul>
+        <li>Указать первым параметром в методе <b>open</b> тип "POST", далее указать путь и асинхронность</li>
+        <li>Установить заголовок "Content-type" в "application/x-www-form-urlencoded" используя метод <b>setRequestHeader</b>:
+            <code id="code" class="language-javascript">xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");</code></li>
+        <li>Вызвать метод send с набором параметром как ключ=значение, объединенные между собой символом <b>&</b></li>
+    </ul>
+    Сформируйте правильный POST запрос, который выполнится синхронно.
+</span>
+<script>
+    var checkDoor = function(resp){
+        if(resp == "ok"){
+            alert('Дверь открыта!');
+            goToNextLesson();
+        }else{
+            alert("Что-то не так. Проверьте код!")
+        }
+    }
+</script>
+<textarea id="jsconsole" cols="130" rows="12">//создаем переменную
+var xhttp = new XMLHttpRequest();
+
+xhttp.open("POST", "path to file...", false);//нужно указать путь...
+//устанавливаем заголовок
+xhttp.setRequestHeader("Content-type", "smile");//правильный ли заголовок...
+//отправляем запрос
+xhttp.send("ххх");//нужно сформировать запрос...
+</textarea>
+<script id="afterBuiltInCode">
+    checkDoor(xhttp.responseText);
+</script>
+<div id="chat"></div>

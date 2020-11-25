@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<student xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="XML.xsd">
+    <name>Ksyusha</name>
+    <surname>Reut</surname>
+    <specialty>ITS</specialty>
+    <course>2</course>
+    <formStudy>Extramural</formStudy>
+    <gradebookNumber>7745623</gradebookNumber>
+</student>

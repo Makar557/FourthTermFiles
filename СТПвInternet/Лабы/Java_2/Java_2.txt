@@ -1,0 +1,36 @@
+Аннотация - краткое изложение содержания чего-либо.
+
+ Зарезервированные слова в Javа
+
+abstract	continue	for	new	switch
+assert	default	goto*	package	synchronized
+boolean	do	if	private	this
+break	double	implements	protected	throw
+byte	else	import	public	throws
+case	enum	instanceof	return	transient
+catch	extends	int	short	try
+char	final	interface	static	void
+class	finally	long	strictfp	volatile
+const*	float	native	super	while
+
+ Зарезервированные имена методов Java
+
+equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait
+
+
+
+ Идентификаторы
+ Литералы (целые, с плавающей точкой, логические, символьные,
+строчные) и константы
+ Управляющие символы
+ Операции и примитивные типы данных (целые типы, числа с
+плавающей точкой, символы и кодировки)
+ Разделители
+ Переменные
+ Операторы
+ Классы оболочки (ссылочные типы данных)
+ Массивы (многомерные массивы)
+ Тип String
+ Консольный ввод-вывод
+ Документирование кода
+ Code convention

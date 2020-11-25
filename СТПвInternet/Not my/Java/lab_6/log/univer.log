@@ -1,0 +1,9 @@
+01.04.2019 01:12:44 [main] INFO  com.gmail.lesya.mileshko.parser.ValidatorXSD  - files/XML.xml is valid
+01.04.2019 01:12:44 [main] INFO  com.gmail.lesya.mileshko.Main  - Start parsing
+01.04.2019 01:12:44 [main] INFO  com.gmail.lesya.mileshko.Main  - end parsing
+01.04.2019 01:14:23 [main] INFO  com.gmail.lesya.mileshko.parser.ValidatorXSD  - files/XML.xml is valid
+01.04.2019 01:14:23 [main] INFO  com.gmail.lesya.mileshko.Main  - Start parsing
+01.04.2019 01:14:23 [main] INFO  com.gmail.lesya.mileshko.Main  - end parsing
+01.04.2019 08:51:04 [main] INFO  com.gmail.lesya.mileshko.parser.ValidatorXSD  - files/XML.xml is valid
+01.04.2019 08:51:04 [main] INFO  com.gmail.lesya.mileshko.Main  - Start parsing
+01.04.2019 08:51:04 [main] INFO  com.gmail.lesya.mileshko.Main  - end parsing

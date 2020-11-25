@@ -1,0 +1,157 @@
+body{
+    color:black;
+    background-image: url("../images/background.png");
+    background-repeat: repeat;
+    background-color: #202529;
+}
+
+b {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 44px;
+}
+/*ul{*/
+    /*list-style: none;*/
+    /*list-style-image: none;*/
+    /*padding: 0;*/
+    /*margin: 0;*/
+/*}*/
+
+/*li{*/
+    /*display: list-item;*/
+    /*text-align: -webkit-match-parent;*/
+/*}*/
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.header {
+    text-align: center;
+    background:#202529;
+    color: white;
+    padding: 10px 0;
+}
+
+.header h1 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+    margin: 20px 0 30px;
+    background-color: white;
+    font-size: 60px;
+}
+
+.header h1 span {
+    background:#202529;
+    padding:0 10px;
+}
+
+.layout {
+    position: relative;
+    margin: 0 auto;
+    width: 600px;
+    border-bottom-width: 1px;
+    border-bottom-color: aliceblue;
+}
+
+.dialog {
+    background-color: antiquewhite;
+    display: block;
+    padding: 12px;
+    min-height: 60px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.monolog {
+    background-color: darkseagreen;
+    display: block;
+    padding: 12px;
+    min-height: 60px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.help {
+    background-color: gold;
+    display: block;
+    padding: 12px;
+    min-height: 60px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+code {
+    background-color: #ffffff;
+    display: block;
+}
+
+.important {
+    color: #dd4444;
+    font-weight: 600;
+    font-size: 20px;
+}
+#chat {
+    background-color: #6fe9ff;
+    display: block;
+}
+
+#executeConsoleBtn {
+    width: 144px;
+    height: 44px;
+    font-size: 20px;
+    background-color: #008855;
+    border-radius: 10px;
+    /*border: none;*/
+}
+
+.iconMechanic {
+    background: url("../images/mech_icon.png") no-repeat;
+    background-size: 60px 60px;
+    width: 60px;
+    height: 60px;
+    float: left;
+    /*display: block;*/
+    text-align: left;
+    margin-right: 4px;
+}
+
+.iconCaptain {
+    background: url("../images/captain_icon.png") no-repeat;
+    background-size: 60px 60px;
+    width: 60px;
+    height: 60px;
+    float: right;
+    margin-left: 4px;
+}
+
+.iconHelp {
+    background: url("../images/help_icon.png") no-repeat;
+    background-size: 60px 60px;
+    width: 60px;
+    height: 60px;
+    float: left;
+    margin-right: 4px;
+}
+
+.planet {
+    display: inline;
+    position: fixed;
+    right:10px;
+    bottom:-190px;
+    background: url("../images/planet.png") no-repeat;
+    background-size: 489px 189px;
+    width: 489px;
+    height:189px;
+}

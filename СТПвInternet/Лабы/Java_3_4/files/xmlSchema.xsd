@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="collection" type="EmployeeCollection"/>
+    <xs:complexType name="EmployeeCollection">
+        <xs:sequence>
+            <xs:element type="Employee" name="employee" maxOccurs="unbounded" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="Employee">
+        <xs:sequence>
+            <xs:element name="name"     type="xs:string"/>
+            <xs:element name="age"      type="xs:integer"/>
+            <xs:element name="salary"   type="xs:float"/>
+            <xs:any minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="qualification">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="junior"/>
+            <xs:enumeration value="middle"/>
+            <xs:enumeration value="senior"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

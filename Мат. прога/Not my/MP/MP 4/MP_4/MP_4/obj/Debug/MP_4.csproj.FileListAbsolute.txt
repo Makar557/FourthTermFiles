@@ -1,0 +1,7 @@
+D:\MP\MP 4\MP_4\MP_4\bin\Debug\MP_4.exe.config
+D:\MP\MP 4\MP_4\MP_4\bin\Debug\MP_4.exe
+D:\MP\MP 4\MP_4\MP_4\bin\Debug\MP_4.pdb
+D:\MP\MP 4\MP_4\MP_4\obj\Debug\MP_4.csprojAssemblyReference.cache
+D:\MP\MP 4\MP_4\MP_4\obj\Debug\MP_4.csproj.CoreCompileInputs.cache
+D:\MP\MP 4\MP_4\MP_4\obj\Debug\MP_4.exe
+D:\MP\MP 4\MP_4\MP_4\obj\Debug\MP_4.pdb

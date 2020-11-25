@@ -1,0 +1,14 @@
+26.03.2018  11:57:00 [main] INFO  com.company.by.belstu.it.Chayeuski.Main.Main  - Starting program_______________________
+26.03.2018  11:57:00 [main] INFO  com.company.by.belstu.it.Chayeuski.Main.Main  - Create Dean(singleton)
+26.03.2018  11:57:00 [main] INFO  com.company.by.belstu.it.Chayeuski.Main.Main  - Create first(Course) by FactoryMethod
+26.03.2018  11:57:00 [main] INFO  com.company.by.belstu.it.Chayeuski.Main.Main  - Create and add students to course
+26.03.2018  11:57:00 [main] INFO  com.company.by.belstu.it.Chayeuski.Main.Main  - Counter of courses
+26.03.2018  11:57:00 [main] INFO  com.company.by.belstu.it.Chayeuski.Main.Main  - Sorting by name
+26.03.2018  11:57:00 [main] INFO  com.company.by.belstu.it.Chayeuski.Main.Main  - End Program___________
+26.03.2018  12:11:42 [main] INFO  com.company.by.belstu.it.Chayeuski.Main.Main  - Starting program_______________________
+26.03.2018  12:11:42 [main] INFO  com.company.by.belstu.it.Chayeuski.Main.Main  - Create Dean(singleton)
+26.03.2018  12:11:42 [main] INFO  com.company.by.belstu.it.Chayeuski.Main.Main  - Create first(Course) by FactoryMethod
+26.03.2018  12:11:42 [main] INFO  com.company.by.belstu.it.Chayeuski.Main.Main  - Create and add students to course
+26.03.2018  12:11:42 [main] INFO  com.company.by.belstu.it.Chayeuski.Main.Main  - Counter of courses
+26.03.2018  12:11:42 [main] INFO  com.company.by.belstu.it.Chayeuski.Main.Main  - Sorting by name
+26.03.2018  12:11:42 [main] INFO  com.company.by.belstu.it.Chayeuski.Main.Main  - End Program___________

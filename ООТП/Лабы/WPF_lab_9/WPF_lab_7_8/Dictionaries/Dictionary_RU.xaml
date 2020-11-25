@@ -1,0 +1,40 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:WPF_lab_7_8.Dictionaries"
+                    xmlns:v="clr-namespace:System;assembly=mscorlib">
+
+    <v:String x:Key="d_Title">Планировщик задач</v:String>
+    <v:String x:Key="d_Language">Язык</v:String>
+
+    
+    <v:String x:Key="d_ShortName">Название</v:String>
+    <v:String x:Key="d_Discription">Описание</v:String>
+    <v:String x:Key="d_Category">Категория</v:String>
+    <v:String x:Key="d_TimeBegine">Дата начала</v:String>
+    <v:String x:Key="d_Priority">Приоритет</v:String>
+    <v:String x:Key="d_Periodicity">Периодичность</v:String>
+    <v:String x:Key="d_Completed">Выполнено</v:String>
+
+    <v:String x:Key="d_Low">Низкий</v:String>
+    <v:String x:Key="d_Medium">Средний</v:String>
+    <v:String x:Key="d_High">Высокий</v:String>
+
+    <v:String x:Key="d_Home">Дома</v:String>
+    <v:String x:Key="d_Study">Учёба</v:String>
+    <v:String x:Key="d_Work">Работа</v:String>
+    <v:String x:Key="d_Other">Другое</v:String>
+
+    <v:String x:Key="d_Once">Один раз</v:String>
+    <v:String x:Key="d_EveryDay">Каждый день</v:String>
+    <v:String x:Key="d_EveryWeek">Раз в неделю</v:String>
+    <v:String x:Key="d_EveryMonth">Раз в месяц</v:String>
+    <v:String x:Key="d_EveryYear">Раз в год</v:String>
+
+    <v:String x:Key="d_Add">Добавить</v:String>
+    <v:String x:Key="d_Edit">Изменить</v:String>
+
+    <v:String x:Key="d_Filter">Фильтровать</v:String>
+
+    <v:String x:Key="d_Theme">Тема</v:String>
+
+</ResourceDictionary>

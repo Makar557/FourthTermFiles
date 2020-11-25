@@ -1,0 +1,40 @@
+<span class="monolog">Фух, теперь можно вдохнуть полной грудью. Теперь необходимо открыть двери из командного блока. Дверьми управляет файл <b>door.php</b> в каталоге <b>systems</b>. Необходимо передать в него параметр <b>door</b> со значением <b>1</b> и <b>status</b> - <b>open</b>. Тип запроса - <b>GET</b></span>
+<span class="help">
+    После того, как переменная запроса создана, необходимо вызвать метод <b>open</b>, который принимает несколько аргументов:
+    <ol>
+        <li>Тип запроса - "GET" или "POST"</li>
+        <li>URL файла - к примеру "folder/file.php"</li>
+        <li>Асинхронно ли выполнить запрос? Если да, то true, иначе - false</li>
+    </ol>
+    <code id="code" class="language-javascript">xhttp.open("ТИП ЗАПРОСА", "URL", Асинхронно?);</code>
+    После этого необходимо вызвать метод <b>send</b> чтобы отправить запрос.<br>Отредактируйте параметры в методе <b>open</b> так, чтобы сформировать необходимый запрос по условию выше.
+</span>
+<script>
+    var called = false;
+
+    var checkDoor = function(resp){
+        if(called) return;
+
+        if(resp == "ok"){
+            called = true;
+
+            alert('Дверь открыта!');
+
+            goToNextLesson();
+        }else{
+            alert('Ошибка! Дверь закрыта!');
+        }
+    };
+</script>
+<textarea id="jsconsole" cols="130" rows="10">//создаем переменную
+var xhttp = new XMLHttpRequest();
+//подписываемся на событие
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        checkDoor(this.responseText);
+    }
+};
+//открываем соединение
+xhttp.open("GET", "systems/door.php?door=??&status=??", true);//что-то тут не так...
+//отправляем запрос
+xhttp.send();</textarea>

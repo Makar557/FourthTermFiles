@@ -1,0 +1,3 @@
+﻿  Source.cpp
+D:\Университет\4sem\Мат. прога\Лабы\Лаба_4\MP_lab4\MP_lab4\Source.cpp(13,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  MP_lab4.vcxproj -> D:\Университет\4sem\Мат. прога\Лабы\Лаба_4\MP_lab4\Debug\MP_lab4.exe

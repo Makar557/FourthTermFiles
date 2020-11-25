@@ -1,0 +1,12 @@
+D:\Университет\4sem\ООТП\Лабы\Enttity\OOTP_lab_12_13\OOTP_lab_12_13\bin\Debug\OOTP_lab_12_13.exe.config
+D:\Университет\4sem\ООТП\Лабы\Enttity\OOTP_lab_12_13\OOTP_lab_12_13\bin\Debug\OOTP_lab_12_13.exe
+D:\Университет\4sem\ООТП\Лабы\Enttity\OOTP_lab_12_13\OOTP_lab_12_13\bin\Debug\OOTP_lab_12_13.pdb
+D:\Университет\4sem\ООТП\Лабы\Enttity\OOTP_lab_12_13\OOTP_lab_12_13\bin\Debug\EntityFramework.dll
+D:\Университет\4sem\ООТП\Лабы\Enttity\OOTP_lab_12_13\OOTP_lab_12_13\bin\Debug\EntityFramework.SqlServer.dll
+D:\Университет\4sem\ООТП\Лабы\Enttity\OOTP_lab_12_13\OOTP_lab_12_13\bin\Debug\EntityFramework.xml
+D:\Университет\4sem\ООТП\Лабы\Enttity\OOTP_lab_12_13\OOTP_lab_12_13\bin\Debug\EntityFramework.SqlServer.xml
+D:\Университет\4sem\ООТП\Лабы\Enttity\OOTP_lab_12_13\OOTP_lab_12_13\obj\Debug\Lab_12_13.csproj.CoreCompileInputs.cache
+D:\Университет\4sem\ООТП\Лабы\Enttity\OOTP_lab_12_13\OOTP_lab_12_13\obj\Debug\Lab_12_13.csproj.CopyComplete
+D:\Университет\4sem\ООТП\Лабы\Enttity\OOTP_lab_12_13\OOTP_lab_12_13\obj\Debug\OOTP_lab_12_13.exe
+D:\Университет\4sem\ООТП\Лабы\Enttity\OOTP_lab_12_13\OOTP_lab_12_13\obj\Debug\OOTP_lab_12_13.pdb
+D:\Университет\4sem\ООТП\Лабы\Enttity\OOTP_lab_12_13\OOTP_lab_12_13\obj\Debug\Lab_12_13.csprojAssemblyReference.cache

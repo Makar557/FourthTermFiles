@@ -1,0 +1,7 @@
+﻿  ChildView.cpp
+d:\cgg\cgg 9\cgg 9\childview.cpp(102): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+d:\cgg\cgg 9\cgg 9\childview.cpp(112): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  LibChart2D.cpp
+d:\cgg\cgg 9\cgg 9\libchart2d.cpp(211): warning C4244: аргумент: преобразование "double" в "int", возможна потеря данных
+  Создание кода...
+  CGG 9.vcxproj -> D:\CGG\CGG 9\x64\Debug\CGG 9.exe

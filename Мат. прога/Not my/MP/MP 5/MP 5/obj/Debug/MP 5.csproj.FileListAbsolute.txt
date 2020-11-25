@@ -1,0 +1,7 @@
+D:\MP\MP 5\MP 5\bin\Debug\MP 5.exe.config
+D:\MP\MP 5\MP 5\bin\Debug\MP 5.exe
+D:\MP\MP 5\MP 5\bin\Debug\MP 5.pdb
+D:\MP\MP 5\MP 5\obj\Debug\MP 5.csprojAssemblyReference.cache
+D:\MP\MP 5\MP 5\obj\Debug\MP 5.csproj.CoreCompileInputs.cache
+D:\MP\MP 5\MP 5\obj\Debug\MP 5.exe
+D:\MP\MP 5\MP 5\obj\Debug\MP 5.pdb

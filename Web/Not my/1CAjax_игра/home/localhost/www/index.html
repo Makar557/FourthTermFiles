@@ -1,0 +1,171 @@
+<!--For code highlight = http://codemirror.net/-->
+<!--For code format = http://prismjs.com/index.html-->
+<!--https://habrahabr.ru/post/14246/-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/prism.css">
+    <link rel="stylesheet" href="styles/codemirror.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+    <script type="text/javascript" src="js/prism.js"></script>
+    <script type="text/javascript" src="js/codemirror.js"></script>
+    <script src="js/mode/javascript/javascript.js"></script>
+    <title>CaptainAjax</title>
+    <script>
+        var baseUrl = "index.html";
+        var myCodeMirror = null;
+
+        var worldState = {};
+
+        function init() {
+            var hash = window.location.hash;
+
+            if(hash && hash.length > 1){
+                var lessonNumber = hash.substr(1,hash.length-1);
+
+                loadLesson(lessonNumber);
+            }else{
+                loadLesson('l1');
+            }
+        }
+
+        function loadLesson(l) {
+            var xhttp = new XMLHttpRequest();
+
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    document.getElementById("demo").innerHTML = this.responseText;
+
+                    window.history.replaceState({},'Lesson ' + l, baseUrl + '#' + l);
+
+                    $("#executeConsoleBtn").hide();
+
+                    var spanClasses = ["dialog", "monolog", "help"];
+                    var iconClasses = ["iconMechanic","iconCaptain", "iconHelp"];
+
+                    var els = [];
+
+                    for(var i=0;i< spanClasses.length;i++){
+                        var htmlEl = $("." + spanClasses[i]);
+
+                        if(htmlEl && htmlEl.length > 0){
+                            var jEl = $(document.createElement('div'));
+
+                            jEl.addClass(iconClasses[i]).prependTo(htmlEl[0]);
+
+                            htmlEl.hide();
+
+                            els.push(htmlEl);
+                        }
+                    }
+
+                    if($("#code")[0]) {
+                        var codeEl = $("#code")[0];
+
+                        Prism.highlightElement(codeEl, Prism.languages.javascript);
+                    }
+
+                    if(document.getElementById("jsconsole"))
+                    {
+                        var readOnly = $('#jsconsole').is('[readonly]');
+
+                        myCodeMirror = CodeMirror.fromTextArea(document.getElementById("jsconsole"), {
+                            lineNumbers: true,
+                            readOnly: readOnly
+                        });
+
+                        var cons = $(myCodeMirror.getWrapperElement());
+
+                        cons.hide();
+
+                        els.push(cons);
+                    }
+
+                    for(var i=0; i < els.length;i++) {
+                        var el = els[i];
+
+                        (function f() {
+                            var j = i;
+
+                            el.delay(i * 1000).slideDown(500, function () {
+                                if(j == els.length-1)
+                                {
+                                    $("#executeConsoleBtn").delay(500).fadeIn(500);
+                                }
+                            });
+                        })();
+                    }
+                }
+            };
+
+            xhttp.open("GET", "lessons/" + l + ".html", true);
+            xhttp.send();
+        }
+
+        var consoleExecuteCmd = function() {
+            //1 try find script code and execute it
+
+            var jsStatic = $("#demo").find("script");
+
+            if(jsStatic && jsStatic[0]) {
+                try{
+                    eval(jsStatic[0].text);
+                }catch(err){
+                    alert('Что-то пошло не так в борт-компьютере! Срочно обратитесь к создателю!\n' + err);
+                }
+            }
+
+            //2 execute user's commands
+
+            var jscode = myCodeMirror.getValue();
+
+            try {
+                eval(jscode);
+            }catch(err){
+                alert("Что-то пошло не так!\nОшибка:" + err);
+            }
+
+            //3 After script
+            if(jsStatic && jsStatic[1]) {
+                try{
+                    eval(jsStatic[1].text);
+                }catch(err){
+                    alert('Что-то пошло не так в борт-компьютере! Срочно обратитесь к создателю!\n' + err);
+                }
+            }
+        };
+
+        var goToNextLesson = function(){
+            var hash = window.location.hash;
+
+            if(hash && hash.length > 2){
+                var lessonNumber = hash.substr(2,hash.length-2);
+
+                lessonNumber = Number(lessonNumber) + 1;
+
+                loadLesson('l' + lessonNumber);
+            }else{
+                loadLesson('l1');
+            }
+        };
+    </script>
+</head>
+<body onload="init()">
+<div class="planet"></div>
+<div class="layout">
+    <header class="header"><h1><span>Captain Ajax</span></h1></header>
+    <div id="demo">loading...</div>
+    <p><button id="executeConsoleBtn" onclick="consoleExecuteCmd()" style="display: none">Выполнить</button></p>
+</div>
+<script>
+    $(".planet").delay(500).animate({
+        bottom: "+=200",
+    }, 400, function() {
+        // Animation complete.
+    });
+</script>
+</body>
+</html>
